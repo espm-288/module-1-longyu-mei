@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Module 1: Tabular Data
 
 Working with larger-than-RAM datasets using `duckdbfs` and DuckDB.
@@ -86,3 +87,8 @@ Practice filtering and aggregating data remotely before collecting results.
 ## License
 
 This educational material is provided for ESPM 288 coursework.
+=======
+# tabular-data-template
+Module 1
+Longyu & Mei's team in ESPM 288 Spring 2026
+>>>>>>> 3b2068e (Update README)
