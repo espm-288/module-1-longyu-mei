@@ -22,8 +22,14 @@ We will be working with [EXIOBASE 3.8.1](https://source.coop/youssef-harby/exiob
 ## Setup
 
 ```{r}
+# Install ggplot2 if not already installed
+if (!require("ggplot2", quietly = TRUE)) {
+    install.packages("ggplot2", repos = "https://cloud.r-project.org")
+}
+
 library(duckdbfs)
 library(dplyr)
+library(ggplot2)
 
 ```
 
@@ -61,3 +67,81 @@ exio |>
 ```
 
 > **Task**: Construct a query to find the top 5 sectors in the US by CO2 emissions in 2022. Remember to check the column names in `exio` to find the appropriate emissions flow.
+
+```{r}
+# Query CO2 emissions data from F_satellite matrix
+co2_data <- exio |>
+    filter(year == 2022, 
+           region == "US",
+           matrix == "F_satellite",
+           stressor %like% "%CO2%") |>
+    group_by(sector) |>
+    summarise(total_co2 = sum(value, na.rm = TRUE),
+              unit = first(unit)) |>
+    arrange(desc(total_co2)) |>
+    head(5) |>
+    collect()
+
+co2_data
+```
+
+## Exercise 3: Comprehensive CO2 Analysis
+
+Now let's read in all CO2 data for further analysis.
+
+```{r}
+# Read all CO2 emissions by region for 2022
+co2_by_region <- exio |>
+    filter(year == 2022,
+           matrix == "F_satellite",
+           stressor %like% "%CO2%") |>
+    group_by(region) |>
+    summarise(total_co2 = sum(value, na.rm = TRUE),
+              unit = first(unit)) |>
+    arrange(desc(total_co2)) |>
+    collect()
+
+# View top 20 CO2 emitters
+head(co2_by_region, 20)
+```
+
+## Exercise 4: Visualizing CO2 Emissions Over Time
+
+```{r}
+# Identify top 5 CO2 emitters (based on 2022 data)
+top5_emitters <- co2_by_region |>
+    head(5) |>
+    pull(region)
+
+top5_emitters
+```
+
+```{r}
+# Get time series for top 5 emitters
+co2_timeseries_top5 <- exio |>
+    filter(matrix == "F_satellite",
+           stressor %like% "%CO2%",
+           region %in% top5_emitters) |>
+    group_by(year, region) |>
+    summarise(total_co2 = sum(value, na.rm = TRUE)) |>
+    arrange(year, region) |>
+    collect()
+
+co2_timeseries_top5
+```
+
+```{r}
+# Visualize CO2 emissions over time for top 5 emitters
+library(ggplot2)
+
+ggplot(co2_timeseries_top5, aes(x = year, y = total_co2, color = region, group = region)) +
+    geom_line(linewidth = 1.2) +
+    geom_point(size = 2) +
+    labs(title = "CO2 Emissions Over Time: Top 5 Emitters (1995-2022)",
+         x = "Year",
+         y = "Total CO2 Emissions",
+         color = "Country/Region") +
+    theme_minimal() +
+    theme(legend.position = "bottom",
+          plot.title = element_text(hjust = 0.5, face = "bold"))
+```
