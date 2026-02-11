@@ -10,7 +10,6 @@
 _site/
 _freeze/
 *_files/
-*.html
 
 # System files
 .DS_Store
@@ -19,3 +18,6 @@ Thumbs.db
 # VS Code (except copilot-instructions)
 .vscode/*
 !.vscode/copilot-instructions.md
+emissions_plot.png
+top5emitters_timeseries.png
+top5decreasing_emitters_timeseries.png

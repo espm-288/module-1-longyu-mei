@@ -1,0 +1,116 @@
+---
+title: "Module 1: Tabular Data"
+subtitle: "Working with larger-than-RAM data using duckdbfs"
+author: "ESPM 288"
+format: html
+---
+
+## Introduction
+
+In this module, we will explore high-performance workflows for tabular data. We will use `duckdbfs` to work with datasets that are larger than available RAM by leveraging DuckDB's streaming and remote file access capabilities.
+
+## Case Study: Global Supply Chains
+
+We will be working with [EXIOBASE 3.8.1](https://source.coop/youssef-harby/exiobase-3), a global Multi-Regional Input-Output (MRIO) database. This dataset tracks economic transactions between sectors and regions, along with their environmental impacts (emissions, resource use, etc.).
+
+**Data description:**
+- **Coverage**: 44 countries + 5 rest-of-world regions.
+- **Timeframe**: 1995–2022.
+- **Content**: Economic transactions (Z matrix), final demand (Y matrix), and environmental stressors (F matrix).
+- **Format**: Cloud-optimized Parquet, partitioned by year and matrix type.
+
+## Setup
+
+```{r}
+library(duckdbfs)
+library(dplyr)
+
+```
+
+## Exercise 1: connecting to remote data
+
+We can open the entire dataset without downloading it using `open_dataset()`. The data is hosted on Source Cooperative. The `**` pattern allows recursive scanning of the partitioned parquet files.
+
+```{r}
+# Open the dataset - filtering for F_satellite matrix (environmental stressors)
+
+# Note: The F matrix is called "F_satellite" in this dataset
+# Using wildcard pattern to capture all years (1995-2022)
+matrix_f <- open_dataset("s3://us-west-2.opendata.source.coop/youssef-harby/exiobase-3/4588235/parquet/year=*/format=ixi/matrix=F_satellite")
+
+# Check the structure
+matrix_f
+
+# Preview the first few rows
+matrix_f |> 
+  head(10) |> 
+  collect()
+
+# See what years are available
+matrix_f |> 
+  distinct(year) |> 
+  arrange(year) |>
+  collect()
+```
+
+
+```{r}
+
+# Explore the column names and types in the matrix 
+
+# See the column names and types in matrix_f
+matrix_f |> 
+  head(1) |> 
+  collect() |>
+  glimpse()
+
+# Or just get column names
+matrix_f |> 
+  head(1) |> 
+  collect() |>
+  names()
+```
+
+
+## Exercise 2: filtering and aggregating data
+Now that we have the dataset open, let's perform some filtering and aggregation operations.
+
+```{r}
+# Aggregate emissions by country and produce a graph over all years
+# for the top 5 emitting countries
+
+
+#find the top 5 emitting countries
+top_countries <- matrix_f |> 
+  group_by(region) |> 
+  summarise(total_emissions = sum(value, na.rm = TRUE)) |> 
+  arrange(desc(total_emissions)) |> 
+  head(5) |> 
+  collect()
+
+print(top_countries)
+
+top_countries <- c('CN','US', 'IN', "WM", 'WA')
+
+# produce graph of emissions over time for top 5 countries
+emissions_over_time <- matrix_f |> 
+  filter(region %in% top_countries) |> 
+  group_by(year, region) |> 
+  summarise(annual_emissions = sum(value, na.rm = TRUE)) |> 
+  collect()
+
+#plot the results
+library(ggplot2)
+emissions_graph <- ggplot(emissions_over_time, aes(x = year, y = annual_emissions, color = region)) +
+  geom_line(size = 1) +
+  labs(title = "Annual Emissions by Top 5 Emitting Countries",
+       x = "Year",
+       y = "Annual Emissions") +
+  theme_minimal()
+
+# Save the plot to a file
+ggsave("emissions_plot.png", plot = emissions_graph, width = 10, height = 6)
+
+# Print message
+print("Plot saved to emissions_plot.png")
+```

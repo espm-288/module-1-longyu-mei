@@ -1,0 +1,164 @@
+---
+title: "Module 1: Tabular Data"
+subtitle: "Working with larger-than-RAM data using duckdbfs"
+author: "Mei Collins"
+format: html
+---
+
+## Case Study: Global Supply Chains
+
+We will be working with [EXIOBASE 3.8.1](https://source.coop/youssef-harby/exiobase-3), a global Multi-Regional Input-Output (MRIO) database. This dataset tracks economic transactions between sectors and regions, along with their environmental impacts (emissions, resource use, etc.).
+
+**Data description:**
+- **Coverage**: 44 countries + 5 rest-of-world regions.
+- **Timeframe**: 1995–2022.
+- **Content**: Economic transactions (Z matrix), final demand (Y matrix), and environmental stressors (F matrix).
+- **Format**: Cloud-optimized Parquet, partitioned by year and matrix type.
+
+## Setup
+
+```{r}
+library(duckdbfs)
+library(dplyr)
+library(ggplot2)
+```
+
+## Connecting to data and quick exploration
+
+```{r}
+# Open the dataset - filtering for F_satellite matrix (environmental stressors)
+
+# Note: The F matrix is called "F_satellite" in this dataset
+# Using wildcard pattern to capture all years (1995-2022)
+matrix_f <- open_dataset("s3://us-west-2.opendata.source.coop/youssef-harby/exiobase-3/4588235/parquet/year=*/format=ixi/matrix=F_satellite")
+
+# Check the structure
+matrix_f
+
+# Preview the first few rows
+matrix_f |> 
+  head(10) |> 
+  collect()
+
+# See what years are available
+matrix_f |> 
+  distinct(year) |> 
+  arrange(year) |>
+  collect()
+```
+
+I want to identify data on the CO2 production country by country, over time. 
+
+Which stressors are related to CO2?
+```{r}
+# Filter stressors to find those related to CO2
+co2_stressors <- matrix_f |>
+  distinct(stressor) |>
+  filter(grepl("CO2|carbon dioxide", stressor, ignore.case = TRUE)) |>
+  collect()
+
+co2_stressors
+```
+
+Great, now we know there are 6 stressors. Let's identify which regions are the top 5 CO2 emitters based on these stressors, and then we can explore their emissions over time.
+
+```{r}
+# Filter data for CO2 stressors and aggregate by region
+co2_by_region <- matrix_f |>
+  filter(stressor %in% co2_stressors$stressor) |>
+  group_by(region) |>
+  summarise(total_co2 = sum(value, na.rm = TRUE)) |>
+  arrange(desc(total_co2)) |>
+  head(5) |>
+  collect()
+
+co2_by_region
+
+top5_regions <- co2_by_region$region
+```
+
+Now that we know the top 5 emitting regions, we can plot their CO2 emissions over time. 
+
+First let's pull the relevant data as a time series
+```{r}
+# Filter and aggregate CO2 emissions by region and year for top 5
+co2_time_series <- matrix_f |>
+  filter(stressor %in% co2_stressors$stressor,
+         region %in% top5_regions) |>
+  group_by(region, year) |>
+  summarise(total_co2 = sum(value, na.rm = TRUE), .groups = "drop") |>
+  collect()
+
+```
+
+Then let's make a graph and save it
+```{r}
+# Plot emissions over time
+emissions_graph <- ggplot(co2_time_series, aes(x = year, y = total_co2, color = region)) +
+  geom_line(linewidth = 1) +
+  geom_point() +
+  labs(title = "CO2 Emissions Over Time - Top 5 Emitting Regions",
+       x = "Year",
+       y = "Total CO2 Emissions",
+       color = "Region") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+# Save the plot to a file
+ggsave("top5emitters_timeseries.png", plot = emissions_graph, width = 10, height = 6)
+
+```
+
+Other questions we can explore with this data include:
+- which countries are decreasing in emissions and why?
+- what are the top sectors and how do they change over time? 
+
+
+Let's tackle the first question: which countries are decreasing in emissions and why?
+
+```{r}
+# Calculate the change in emissions from 1995 to 2022 for each region
+emissions_change <-  matrix_f|>
+  filter(stressor %in% co2_stressors$stressor) |>
+  group_by(region) |>
+  summarise(emissions_1995 = sum(value[year == 1995]),
+            emissions_2022 = sum(value[year == 2022]),
+  )|>
+    mutate(percent_change = (emissions_2022 - emissions_1995) / emissions_1995 * 100) |>
+  arrange(percent_change) |>
+  head(5) |>
+  collect()     
+
+emissions_change
+```
+
+
+Now plot the emissions over time for these five regions
+
+```{r}
+# Get the top 5 regions with the largest decrease in emissions
+top5_decreasing_regions <- emissions_change$region
+
+
+# Filter and aggregate CO2 emissions by region and year for top 5 decreasing regions
+co2_decreasing_time_series <- matrix_f |>      
+    filter(stressor %in% co2_stressors$stressor,
+             region %in% top5_decreasing_regions) |>
+    group_by(region, year) |>
+    summarise(total_co2 = sum(value, na.rm = TRUE), .groups = "drop") |>
+    collect()   
+
+# Plot emissions over time for decreasing regions
+decreasing_emissions_graph <- ggplot(co2_decreasing_time_series, aes(x = year, y = total_co2, color = region)) +
+  geom_line(linewidth = 1) +
+  geom_point() +
+  labs(title = "CO2 Emissions Over Time - Top 5 Decreasing Regions",
+       x = "Year",
+       y = "Total CO2 Emissions",
+       color = "Region") +
+  theme_minimal() +
+  theme(legend.position = "bottom") 
+
+# Save the plot to a file
+ggsave("top5decreasing_emitters_timeseries.png", plot = decreasing_emissions_graph, width = 10, height = 6)
+```
