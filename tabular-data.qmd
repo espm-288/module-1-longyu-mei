@@ -55,6 +55,75 @@ exio <- open_dataset(s3_url)
 glimpse(exio)
 ```
 
+I want to identify data on the CO2 production country by country over time.
+
+First let's see what tables are available in the dataset:
+
+```{r}
+exio|>
+    distinct(matrix) |>
+    collect()
+```
+
+Open the F_satellite table only in the data, and give me unique values for the stressor column:
+```{r}
+exio|>
+    filter(matrix == "F_satellite") |>
+    distinct(stressor) |>
+    collect()
+
+```
+
+There's a lot of possible stressor types, how can I find the ones that are just about CO2(carbon dioxide emissions)?
+
+```{r}
+exio|>
+    filter(matrix == "F_satellite",
+           stressor %like% "%CO2%") |>
+    filter(grepl("CO2|carbon dioxide", stressor, ignore.case = TRUE)) |>
+    distinct(stressor) |>
+    collect()
+```
+Identify which regions are the top 5 CO2 emitters:
+```{r}
+# Get top 5 CO2 emitting regions across all years
+top_co2_regions <- exio |>
+    filter(matrix == "F_satellite",
+           stressor %like% "%CO2%") |>
+    group_by(region) |>
+    summarise(total_co2 = sum(value, na.rm = TRUE),
+              unit = first(unit)) |>
+    arrange(desc(total_co2)) |>
+    head(5) |>
+    collect()
+
+top_co2_regions
+```
+
+
+Export all unique stressor types from F_matrix to a markdown file:
+```{r}
+# Get all unique stressor types from F_satellite
+stressors <- exio |>
+    filter(matrix == "F_satellite") |>
+    distinct(stressor) |>
+    collect()
+
+# Write to markdown file
+writeLines(
+    c("# F_satellite Stressor Types",
+      "",
+      paste("Total unique stressors:", nrow(stressors)),
+      "",
+      "## List of Stressors",
+      "",
+      paste("-", stressors$stressor)),
+    "stressor_types.md"
+)
+
+cat("Exported", nrow(stressors), "stressor types to stressor_types.md\n")
+```
+
 ## Exercise 2: Efficient Filtering
 
 The dataset is large. We should filter *before* collecting any data into R.
@@ -134,7 +203,7 @@ co2_timeseries_top5
 # Visualize CO2 emissions over time for top 5 emitters
 library(ggplot2)
 
-ggplot(co2_timeseries_top5, aes(x = year, y = total_co2, color = region, group = region)) +
+plot_co2 <- ggplot(co2_timeseries_top5, aes(x = year, y = total_co2, color = region, group = region)) +
     geom_line(linewidth = 1.2) +
     geom_point(size = 2) +
     labs(title = "CO2 Emissions Over Time: Top 5 Emitters (1995-2022)",
@@ -144,4 +213,10 @@ ggplot(co2_timeseries_top5, aes(x = year, y = total_co2, color = region, group =
     theme_minimal() +
     theme(legend.position = "bottom",
           plot.title = element_text(hjust = 0.5, face = "bold"))
+
+# Display the plot
+print(plot_co2)
+
+# Save the plot to a file you can open
+ggsave("co2_emissions_top5.png", plot = plot_co2, width = 10, height = 6, dpi = 300)
 ```

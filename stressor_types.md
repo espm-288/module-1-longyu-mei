@@ -1,0 +1,1057 @@
+# F_satellite Stressor Types
+
+Total unique stressors: 1051
+
+## List of Stressors
+
+- Domestic Extraction Used - Primary Crops - Broad beans, horse beans, dry
+- Domestic Extraction Used - Primary Crops - Cashewapple
+- Domestic Extraction Used - Primary Crops - Castor oil seed
+- Domestic Extraction Used - Primary Crops - Citrus Fruit nec
+- Domestic Extraction Used - Primary Crops - Cow peas, dry
+- Domestic Extraction Used - Primary Crops - Maize, green
+- Domestic Extraction Used - Primary Crops - Oats
+- Domestic Extraction Used - Primary Crops - Oil Palm Fruit
+- Domestic Extraction Used - Primary Crops - Oilseeds nec
+- Domestic Extraction Used - Primary Crops - Pepper
+- Domestic Extraction Used - Primary Crops - Persimmons
+- Unused Domestic Extraction - Primary Crops - Grapefruit and Pomelos
+- Unused Domestic Extraction - Primary Crops - Broad beans, horse beans, dry
+- Unused Domestic Extraction - Primary Crops - String beans
+- Unused Domestic Extraction - Primary Crops - Hempseed
+- Unused Domestic Extraction - Primary Crops - Flax Fibre and Tow
+- Unused Domestic Extraction - Primary Crops - Coir
+- NMVOC - non combustion - Extraction/production of crude oil - air
+- PM2.5 - non combustion - Platinum ores and concentrates - air
+- PM2.5 - non combustion - Production of coke oven coke - air
+- PM2.5 - non combustion - Steel production: basic oxygen furnace - air
+- PM2.5 - non combustion - Steel production: open hearth furnace - air
+- CO2 - waste - biogenic - air
+- Cropland - Oil seeds
+- Cropland - Paddy rice
+- Cropland - Plant-based fibers
+- Domestic Extraction Used - Non-Metallic Minerals - Clays and kaolin
+- Domestic Extraction Used - Primary Crops - Anise, Badian, Fennel
+- Domestic Extraction Used - Primary Crops - Beans, green
+- Domestic Extraction Used - Primary Crops - Rye
+- Unused Domestic Extraction - Primary Crops - Apples
+- Water Consumption Blue - Livestock - turkeys
+- Water Consumption Blue - Manufacturing - Secondary paper for treatment, Re-processing of secondary paper into new pulp
+- Water Consumption Blue - Manufacturing - Printed matter and recorded media (22)
+- Water Consumption Blue - Manufacturing - Other transport equipment (35)
+- Water Withdrawal Blue - Manufacturing - Products of meat pigs
+- Water Withdrawal Blue - Manufacturing - Precious metals
+- Water Withdrawal Blue - Manufacturing - Secondary preciuos metals for treatment, Re-processing of secondary preciuos metals into new preciuos metals
+- NMVOC - non combustion - Wire coating - air
+- PM2.5 - non combustion - Chemical wood pulp, sulphite, other than dissolving grades - air
+- PM2.5 - non combustion - Fertilizer production (N-fertilizer) - air
+- Benzo(b)fluoranthene - combustion - air
+- Ni - combustion - air
+- Unused Domestic Extraction - Primary Crops - Pome fruit, nes
+- TSP - non combustion - Briquettes production - air
+- TSP - non combustion - Fertilizer production (N-fertilizer) - air
+- TSP - non combustion - Mining of lignite (brown coal) - air
+- TSP - non combustion - Nickel ores and concentrates - air
+- PM10 - non combustion - Molybdenum ores and concentrates - air
+- PM10 - non combustion - Silver ores and concentrates - air
+- PM10 - non combustion - Steel production: electric arc furnace - air
+- As - non combustion - Steel production: electric arc furnace - air
+- B(b)F - non combustion - Primary aluminium production - air
+- B(k)F - non combustion - Production of coke oven coke - air
+- CO - non combustion - Steel production: basic oxygen furnace - air
+- Cd - non combustion - Steel production: open hearth furnace - air
+- PCB - non combustion - Steel production: basic oxygen furnace - air
+- PCDD/F - non combustion - Steel production: basic oxygen furnace - air
+- PM10 - non combustion - Agglomeration plant - sinter - air
+- PM10 - non combustion - Bricks production - air
+- PM10 - non combustion - Cement production - air
+- PM10 - non combustion - Chromium ores and concentrates - air
+- NOx - non combustion - Production of coke oven coke - air
+- NOx - non combustion - Steel production: basic oxygen furnace - air
+- TSP - non combustion - Steel production: open hearth furnace - air
+- Domestic Extraction Used - Primary Crops - Carrots
+- Domestic Extraction Used - Primary Crops - Cashew nuts, with shell
+- Domestic Extraction Used - Primary Crops - Cassava leaves
+- Domestic Extraction Used - Primary Crops - Nuts, nes
+- Domestic Extraction Used - Primary Crops - Okra
+- Unused Domestic Extraction - Primary Crops - Figs
+- Unused Domestic Extraction - Primary Crops - Gooseberries
+- Unused Domestic Extraction - Primary Crops - Raspberries
+- Unused Domestic Extraction - Primary Crops - Strawberries
+- Unused Domestic Extraction - Primary Crops - Stone Fruit nec,
+- Unused Domestic Extraction - Primary Crops - Linseed
+- Unused Domestic Extraction - Primary Crops - Castor oil seed
+- Unused Domestic Extraction - Primary Crops - Tung Nuts
+- Unused Domestic Extraction - Primary Crops - Ramie
+- Unused Domestic Extraction - Primary Crops - Other Bastfibres
+- Unused Domestic Extraction - Fishery - Marine fish catch
+- Unused Domestic Extraction - Fodder crops - Alfalfa for Forage and Silage
+- NMVOC - non combustion - Coil coating (coating of aluminum and steel) - air
+- NMVOC - non combustion - Fish, fish fillets, other fish meat and fish livers and roes, frozen - air
+- NMVOC - non combustion - Fish, otherwise prepared or preserved; caviar - air
+- NMVOC - non combustion - Flexography and rotogravure in packaging - air
+- PM2.5 - non combustion - Zinc ores and concentrates - air
+- Zn - non combustion - Steel production: basic oxygen furnace - air
+- P - agriculture - soil
+- Cropland - Cereal grains nec
+- Forest area - Forestry
+- Energy Carrier Supply: Total
+- Domestic Extraction Used - Fodder crops - Carrots for Fodder
+- Domestic Extraction Used - Primary Crops - Asparagus
+- Domestic Extraction Used - Primary Crops - Vanilla
+- Unused Domestic Extraction - Primary Crops - Wheat
+- Unused Domestic Extraction - Primary Crops - Mixed Grain
+- Unused Domestic Extraction - Primary Crops - Fonio
+- Unused Domestic Extraction - Primary Crops - Artichokes
+- Unused Domestic Extraction - Primary Crops - Leeks and other Alliac. Veg.
+- Unused Domestic Extraction - Metal Ores - Zinc ores
+- Unused Domestic Extraction - Primary Crops - Kapokseed in Shell
+- Water Consumption Blue - Agriculture - fruits
+- Water Consumption Blue - Manufacturing - Dairy products
+- Water Consumption Blue - Manufacturing - P- and other fertiliser
+- Water Consumption Blue - Manufacturing - Aluminium and aluminium products
+- Water Consumption Blue - Manufacturing - Motor vehicles, trailers and semi-trailers (34)
+- Water Withdrawal Blue - Manufacturing - Dairy products
+- Water Withdrawal Blue - Manufacturing - Wearing apparel; furs (18)
+- Water Withdrawal Blue - Manufacturing - Ceramic goods
+- Water Withdrawal Blue - Manufacturing - Fabricated metal products, except machinery and equipment (28)
+- Water Withdrawal Blue - Manufacturing - Medical, precision and optical instruments, watches and clocks (33)
+- Water Withdrawal Blue - Electricity - tower - Electricity by Geothermal
+- NMVOC - non combustion - Tyre production - air
+- PM2.5 - non combustion - Aluminium ores and concentrates (Bauxite) - air
+- PM2.5 - non combustion - Chemical wood pulp, dissolving grades - air
+- PM2.5 - non combustion - Glass production - air
+- PM2.5 - non combustion - Mining of lignite (brown coal) - air
+- PM2.5 - non combustion - N- fertilizer production - air
+- Cu - non combustion - Steel production: basic oxygen furnace - air
+- Cu - non combustion - Steel production: electric arc furnace - air
+- Operating surplus: Remaining net operating surplus
+- PCBs - combustion - air
+- NMVOC - combustion - air
+- TSP - non combustion - Carbon black production - air
+- TSP - non combustion - Chemical wood pulp, soda and sulphate, other than dissolving grades - air
+- TSP - non combustion - Chromium ores and concentrates - air
+- TSP - non combustion - Copper ores and concentrates - air
+- TSP - non combustion - Mining of antracite - air
+- TSP - non combustion - Mining of sub-bituminous coal - air
+- CO - combustion - air
+- PM10 - non combustion - Refined lead, unwrought - air
+- CH4 - non combustion - Extraction/production of (natural) gas - air
+- PCDD/F - non combustion - Pig iron production, blast furnace - air
+- NOx - non combustion - Sulphuric acid production - air
+- SOx - non combustion - Pig iron production, blast furnace - air
+- Domestic Extraction Used - Primary Crops - Currants
+- Domestic Extraction Used - Primary Crops - Figs
+- Unused Domestic Extraction - Primary Crops - Avocados
+- Unused Domestic Extraction - Primary Crops - Carobs
+- Unused Domestic Extraction - Primary Crops - Grapes
+- Unused Domestic Extraction - Primary Crops - Lemons and Limes
+- Unused Domestic Extraction - Primary Crops - Maize, green
+- Unused Domestic Extraction - Primary Crops - Rapeseed
+- Unused Domestic Extraction - Primary Crops - Fibre Crops nes
+- Unused Domestic Extraction - Primary Crops - Kapok Fibre
+- Indeno - non combustion - Production of coke oven coke - air
+- NMVOC - non combustion - Gasoline distribution - transport and depots (used in mobile sources) - air
+- PM2.5 - non combustion - Tin ores and concentrates - air
+- PM2.5 - non combustion - Zinc, unwrought, not alloyed - air
+- Pb - non combustion - Steel production: basic oxygen furnace - air
+- Zn - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- Domestic Extraction Used - Fishery - Inland waters fish catch
+- Domestic Extraction Used - Fodder crops - Grasses nec for Forage and Silage
+- Domestic Extraction Used - Fodder crops - Green Oilseeds for Fodder
+- Domestic Extraction Used - Fodder crops - Leguminous nec for forage and Silage
+- Domestic Extraction Used - Metal Ores - Iron ores
+- Domestic Extraction Used - Non-Metallic Minerals - Building stones
+- Domestic Extraction Used - Primary Crops - Rice
+- Domestic Extraction Used - Primary Crops - Tang. Mand Clement. Satsma
+- Unused Domestic Extraction - Primary Crops - Rice
+- Unused Domestic Extraction - Primary Crops - Quinoa
+- Unused Domestic Extraction - Primary Crops - Sweet Potatoes
+- Unused Domestic Extraction - Primary Crops - Asparagus
+- Unused Domestic Extraction - Primary Crops - Cabbages
+- Unused Domestic Extraction - Primary Crops - Spinach
+- Unused Domestic Extraction - Metal Ores - Tin ores
+- Unused Domestic Extraction - Non-Metallic Minerals - Chemical and fertilizer minerals
+- Unused Domestic Extraction - Non-Metallic Minerals - Limestone, gypsum, chalk, dolomite
+- Water Consumption Green - Agriculture - roots and tubers
+- Water Consumption Blue - Agriculture - wheat
+- Water Consumption Blue - Agriculture - roots and tubers
+- Water Consumption Blue - Agriculture - other crops
+- Water Consumption Blue - Manufacturing - Tobacco products (16)
+- Water Consumption Blue - Manufacturing - Rubber and plastic products (25)
+- Water Consumption Blue - Manufacturing - Lead, zinc and tin and products thereof
+- Water Consumption Blue - Electricity - once-through - Electricity by gas
+- Water Consumption Blue - Electricity - once-through - Electricity by nuclear
+- Water Withdrawal Blue - Manufacturing - Radio, television and communication equipment and apparatus (32)
+- Water Withdrawal Blue - Electricity - tower - Electricity by gas
+- NOx - non combustion - Cement production - air
+- PM2.5 - non combustion - Agglomeration plant - pellets - air
+- PM2.5 - non combustion - Carbon black production - air
+- PM2.5 - non combustion - Iron ores and concentrates - air
+- Hg - non combustion - Agglomeration plant - sinter - air
+- Compensation of employees; wages, salaries, & employers' social contributions: High-skilled
+- Operating surplus: Consumption of fixed capital
+- Employment: High-skilled male
+- PM10 - combustion - air
+- Cd - combustion - air
+- Domestic Extraction Used - Primary Crops - Pome fruit, nes
+- TSP - non combustion - Pig iron production, blast furnace - air
+- PM10 - non combustion - Production of coke oven coke - air
+- CH4 - non combustion - Mining of sub-bituminous coal - air
+- CO - non combustion - Lime production - air
+- CO2 - non combustion - Cement production - air
+- Cd - non combustion - Agglomeration plant - sinter - air
+- Cr - non combustion - Pig iron production, blast furnace - air
+- PAH - non combustion - Steel production: electric arc furnace - air
+- PM10 - non combustion - Chemical wood pulp, soda and sulphate, other than dissolving grades - air
+- NOx - non combustion - Steel production: electric arc furnace - air
+- Se - non combustion - Agglomeration plant - sinter - air
+- Domestic Extraction Used - Primary Crops - Coffee, Green
+- Domestic Extraction Used - Primary Crops - Fibre Crops nes
+- Domestic Extraction Used - Primary Crops - Grapefruit and Pomelos
+- Domestic Extraction Used - Primary Crops - Rapeseed
+- Unused Domestic Extraction - Primary Crops - Nuts, nes
+- Unused Domestic Extraction - Primary Crops - Jojoba Seeds
+- Hg - non combustion - Production of gascoke - air
+- Hg - non combustion - Refined copper; unwrought, not alloyed - air
+- NMVOC - non combustion - Gasoline distribution - service stations - air
+- PM2.5 - non combustion - Secondary aluminium production - air
+- Zn - non combustion - Zinc, unwrought, not alloyed - air
+- Other land Use: Total
+- Emission Relevant Energy Carrier: Total
+- Domestic Extraction Used - Fodder crops - Swedes for Fodder
+- Domestic Extraction Used - Non-Metallic Minerals - Slate
+- Domestic Extraction Used - Primary Crops - Beeswax
+- Domestic Extraction Used - Primary Crops - Bambara beans
+- Domestic Extraction Used - Primary Crops - Barley
+- Domestic Extraction Used - Primary Crops - Sisal
+- Unused Domestic Extraction - Primary Crops - Millet
+- Unused Domestic Extraction - Primary Crops - Carrots
+- Unused Domestic Extraction - Fossil Fuels - Peat
+- Unused Domestic Extraction - Metal Ores - PGM ores
+- Unused Domestic Extraction - Non-Metallic Minerals - Gravel and sand
+- Water Consumption Blue - Agriculture - oil crops
+- Water Consumption Blue - Manufacturing - Products of meat pigs
+- Water Consumption Blue - Manufacturing - products of Vegetable oils and fats
+- Water Consumption Blue - Manufacturing - Paper and paper products
+- Water Consumption Blue - Manufacturing - Other non-metallic mineral products
+- Water Consumption Blue - Manufacturing - Secondary preciuos metals for treatment, Re-processing of secondary preciuos metals into new preciuos metals
+- Water Consumption Blue - Electricity - tower - Electricity by petroleum and other oil derivatives
+- Water Consumption Blue - Electricity - tower - Electricity by biomass and waste
+- Water Consumption Blue - Electricity - tower - Electricity by solar thermal
+- Water Consumption Blue - Electricity - once-through - Electricity by biomass and waste
+- Water Withdrawal Blue - Manufacturing - Printed matter and recorded media (22)
+- NMVOC - non combustion - Steam cracking (ethylene and propylene production) - air
+- NOx - non combustion - Chemical wood pulp, dissolving grades - air
+- NOx - non combustion - Chemical wood pulp, soda and sulphate, other than dissolving grades - air
+- PM2.5 - non combustion - Chemical wood pulp, soda and sulphate, other than dissolving grades - air
+- PM2.5 - non combustion - Nickel, unwrought - air
+- Hg - non combustion - Glass production - air
+- Indeno(1,2,3-cd)pyrene - combustion - air
+- TSP - non combustion - Glass production - air
+- TSP - non combustion - Iron ores and concentrates - air
+- Employment hours: Medium-skilled female
+- PM10 - non combustion - Platinum ores and concentrates - air
+- PM10 - non combustion - Tin ores and concentrates - air
+- B(b)F - non combustion - Production of gascoke - air
+- Cd - non combustion - Glass production - air
+- Cd - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- Cr - non combustion - Glass production - air
+- PAH - non combustion - Agglomeration plant - sinter - air
+- PM10 - non combustion - Copper ores and concentrates - air
+- SOx - non combustion - Production of coke oven coke - air
+- Se - non combustion - Glass production - air
+- Domestic Extraction Used - Primary Crops - Cabbages
+- Domestic Extraction Used - Primary Crops - Cocoa Beans
+- Domestic Extraction Used - Primary Crops - Dates
+- Domestic Extraction Used - Primary Crops - Kapok Fibre
+- Domestic Extraction Used - Primary Crops - Karite Nuts
+- Domestic Extraction Used - Primary Crops - Leguminous vegetables, nes
+- Domestic Extraction Used - Primary Crops - Oranges
+- Domestic Extraction Used - Primary Crops - Pigeon peas
+- Domestic Extraction Used - Primary Crops - Pulses nec
+- Domestic Extraction Used - Primary Crops - Pyrethrum, Dried Flowers
+- Domestic Extraction Used - Primary Crops - Ramie
+- Unused Domestic Extraction - Primary Crops - Kiwi Fruit
+- Unused Domestic Extraction - Primary Crops - Peas, dry
+- Unused Domestic Extraction - Primary Crops - Pigeon peas
+- Unused Domestic Extraction - Primary Crops - Fruit, tropical fresh nes
+- Unused Domestic Extraction - Primary Crops - Sugar Beets
+- Unused Domestic Extraction - Primary Crops - Agave Fibres nes
+- Unused Domestic Extraction - Fodder crops - Beets for Fodder
+- Hg - non combustion - Zinc, unwrought, not alloyed - air
+- NMVOC - non combustion - Leather coating - air
+- NMVOC - non combustion - Organic chemical industry - downstream units - air
+- Pb - non combustion - Steel production: open hearth furnace - air
+- Cropland - Fodder crops-Cattle
+- Domestic Extraction Used - Fodder crops - Alfalfa for Forage and Silage
+- Domestic Extraction Used - Fodder crops - Clover for Forage and Silage
+- Domestic Extraction Used - Metal Ores - PGM ores
+- Domestic Extraction Used - Primary Crops - Apricots
+- Domestic Extraction Used - Primary Crops - Sorghum
+- Domestic Extraction Used - Primary Crops - String beans
+- Domestic Extraction Used - Primary Crops - Watermelons
+- Unused Domestic Extraction - Primary Crops - Oats
+- Unused Domestic Extraction - Metal Ores - Bauxite and aluminium ores
+- Water Consumption Green - Agriculture - fodder crops
+- Water Consumption Blue - Livestock - pigs
+- Water Consumption Blue - Livestock - goats
+- Water Consumption Blue - Manufacturing - Wearing apparel; furs (18)
+- Water Consumption Blue - Manufacturing - Fabricated metal products, except machinery and equipment (28)
+- Water Consumption Blue - Manufacturing - Medical, precision and optical instruments, watches and clocks (33)
+- Water Consumption Blue - Electricity - tower - Electricity by Geothermal
+- Water Consumption Blue - Electricity - once-through - Electricity by coal
+- Water Consumption Blue - Electricity - once-through - Electricity by Geothermal
+- Water Withdrawal Blue - Manufacturing - Meat products nec
+- Water Withdrawal Blue - Manufacturing - Secondary glass for treatment, Re-processing of secondary glass into new glass
+- Zn - non combustion - Glass production - air
+- Energy Carrier Net Total
+- Energy Carrier Net TAVI
+- Energy Carrier Net TROA
+- NMVOC - non combustion - Poultry, dressed - air
+- PM2.5 - non combustion - Mining of sub-bituminous coal - air
+- Other net taxes on production
+- TSP - combustion - air
+- Water Withdrawal Blue - Electricity - once-through - Electricity by gas
+- Water Withdrawal Blue - Electricity - once-through - Electricity by petroleum and other oil derivatives
+- PM10 - non combustion - Refined copper; unwrought, not alloyed - air
+- B(a)P - non combustion - Primary aluminium production - air
+- B(b)F - non combustion - Production of coke oven coke - air
+- CH4 - non combustion - Extraction/production of crude oil - air
+- CO - non combustion - Bricks production - air
+- CO - non combustion - Steel production: electric arc furnace - air
+- Cd - non combustion - Nickel, unwrought - air
+- Cd - non combustion - Production of gascoke - air
+- Cd - non combustion - Refined copper; unwrought, not alloyed - air
+- PAH - non combustion - Production of coke oven coke - air
+- PCB - non combustion - Steel production: electric arc furnace - air
+- PM10 - non combustion - Cast iron production (grey iron foundries) - air
+- PM10 - non combustion - Iron ores and concentrates - air
+- NOx - non combustion - Refined copper; unwrought, not alloyed - air
+- NOx - non combustion - Zinc, unwrought, not alloyed - air
+- TSP - non combustion - Steel production: basic oxygen furnace - air
+- Domestic Extraction Used - Primary Crops - Groundnuts in Shell
+- Domestic Extraction Used - Primary Crops - Jojoba Seeds
+- Domestic Extraction Used - Primary Crops - Jute and Jute-like Fibres
+- Domestic Extraction Used - Primary Crops - Maize
+- Domestic Extraction Used - Primary Crops - Natural Rubber
+- Domestic Extraction Used - Primary Crops - Poppy Seed
+- Domestic Extraction Used - Primary Crops - Potatoes
+- Unused Domestic Extraction - Primary Crops - Hazelnuts
+- Unused Domestic Extraction - Primary Crops - Beans, green
+- Unused Domestic Extraction - Primary Crops - Hemp Fibre and Tow
+- Unused Domestic Extraction - Primary Crops - Cocoa Beans
+- NMVOC - non combustion - Degreasing - air
+- PM2.5 - non combustion - Refined lead, unwrought - air
+- Pb - non combustion - Production of gascoke - air
+- SOx - non combustion - Chemical wood pulp, dissolving grades - air
+- CH4 - agriculture - air
+- N - agriculture - water
+- Cropland - Crops nec
+- Domestic Extraction Used - Fishery - Marine fish catch
+- Domestic Extraction Used - Metal Ores - Bauxite and aluminium ores
+- Domestic Extraction Used - Metal Ores - Silver ores
+- Domestic Extraction Used - Non-Metallic Minerals - Limestone, gypsum, chalk, dolomite
+- Domestic Extraction Used - Primary Crops - Raspberries
+- Domestic Extraction Used - Primary Crops - Vegetables Fresh nec
+- Unused Domestic Extraction - Primary Crops - Barley
+- Unused Domestic Extraction - Primary Crops - Olives
+- Unused Domestic Extraction - Primary Crops - Cucumbers and Gherkins
+- Unused Domestic Extraction - Metal Ores - Copper ores
+- Water Consumption Blue - Livestock - sheep
+- Water Consumption Blue - Manufacturing - Basic iron and steel and of ferro-alloys and first products thereof
+- Water Consumption Blue - Manufacturing - Copper products
+- Water Consumption Blue - Manufacturing - Office machinery and computers (30)
+- Water Withdrawal Blue - Manufacturing - Pulp
+- Water Withdrawal Blue - Manufacturing - N-fertiliser
+- Water Withdrawal Blue - Manufacturing - Ash for treatment, Re-processing of ash into clinker
+- Water Withdrawal Blue - Manufacturing - Secondary copper for treatment, Re-processing of secondary copper into new copper
+- Water Withdrawal Blue - Electricity - tower - Electricity by biomass and waste
+- Zn - non combustion - Agglomeration plant - sinter - air
+- Energy Carrier Net TRAI
+- PM2.5 - non combustion - Mining of bituminous coal - air
+- Cu - non combustion - Glass production - air
+- Cr - combustion - air
+- Cu - combustion - air
+- TSP - non combustion - Bricks production - air
+- TSP - non combustion - Cement production - air
+- TSP - non combustion - Chemical wood pulp, dissolving grades - air
+- PM10 - non combustion - Steel production: basic oxygen furnace - air
+- As - non combustion - Production of gascoke - air
+- B(a)P - non combustion - Production of coke oven coke - air
+- CH4 - non combustion - Mining of lignite (brown coal) - air
+- CO - non combustion - Cement production - air
+- Cd - non combustion - Agglomeration plant - pellets - air
+- PCB - non combustion - Pig iron production, blast furnace - air
+- PCDD/F - non combustion - Steel production: electric arc furnace - air
+- SOx - non combustion - Lime production - air
+- PM10 - non combustion - Carbon black production - air
+- SOx - non combustion - Semi-chemical wood pulp, pulp of fibers other than wood - air
+- Zn - non combustion - Agglomeration plant - pellets - air
+- Domestic Extraction Used - Primary Crops - Brazil nuts, with shell
+- Unused Domestic Extraction - Primary Crops - Roots and Tubers, nes
+- Unused Domestic Extraction - Primary Crops - Other melons
+- Unused Domestic Extraction - Primary Crops - Cashewapple
+- Unused Domestic Extraction - Primary Crops - Poppy Seed
+- Unused Domestic Extraction - Primary Crops - Soybeans
+- Unused Domestic Extraction - Primary Crops - Sugar Crops nes
+- Unused Domestic Extraction - Primary Crops - Abaca
+- Hg - non combustion - Refined lead, unwrought - air
+- NMVOC - non combustion - Extraction, proc. and distribution of gaseous fuels - air
+- NMVOC - non combustion - Industrial paint application, general industry (continuous processes) - air
+- NMVOC - non combustion - Industrial paint application, general industry (plastic parts) - air
+- NMVOC - non combustion - Organic chemical industry, storage - air
+- PM2.5 - non combustion - Refined copper; unwrought, not alloyed - air
+- Pb - non combustion - Glass production - air
+- Pb - non combustion - Nickel, unwrought - air
+- Pb - non combustion - Pig iron production, blast furnace - air
+- Pb - non combustion - Production of coke oven coke - air
+- Pb - non combustion - Refined lead, unwrought - air
+- Zn - non combustion - Refined copper; unwrought, not alloyed - air
+- CH4 - waste - air
+- CO2 - waste - fossil - air
+- PM2.5 - waste - air
+- Cropland - Sugar cane, sugar beet
+- Permanent pastures - Grazing-Raw milk
+- Domestic Extraction Used - Metal Ores - Lead ores
+- Domestic Extraction Used - Metal Ores - Nickel ores
+- Domestic Extraction Used - Primary Crops - Sunflower Seed
+- Domestic Extraction Used - Primary Crops - Tomatoes
+- Unused Domestic Extraction - Primary Crops - Lupins
+- Unused Domestic Extraction - Fossil Fuels - Anthracite
+- Unused Domestic Extraction - Fossil Fuels - Crude oil
+- Water Consumption Green - Agriculture - nuts
+- Water Consumption Green - Agriculture - vegetables
+- Water Consumption Blue - Manufacturing - Beverages
+- Water Consumption Blue - Manufacturing - Plastics, basic
+- Water Consumption Blue - Manufacturing - Secondary aluminium for treatment, Re-processing of secondary aluminium into new aluminium
+- Water Consumption Blue - Manufacturing - Other non-ferrous metal products
+- Water Consumption Blue - Manufacturing - Secondary other non-ferrous metals for treatment, Re-processing of secondary other non-ferrous metals into new other non-ferrous metals
+- Water Consumption Blue - Electricity - tower - Electricity by gas
+- Water Withdrawal Blue - Manufacturing - Products of meat cattle
+- Water Withdrawal Blue - Manufacturing - Food products nec
+- Water Withdrawal Blue - Manufacturing - Textiles (17)
+- Water Withdrawal Blue - Manufacturing - Secondary paper for treatment, Re-processing of secondary paper into new pulp
+- Water Withdrawal Blue - Manufacturing - Secondary other non-ferrous metals for treatment, Re-processing of secondary other non-ferrous metals into new other non-ferrous metals
+- Water Withdrawal Blue - Manufacturing - Other transport equipment (35)
+- Water Withdrawal Blue - Electricity - tower - Electricity by coal
+- NMVOC - non combustion - Raw sugar - air
+- PM2.5 - non combustion - Copper ores and concentrates - air
+- PM2.5 - non combustion - Oil refinery - air
+- Cu - non combustion - Pig iron production, blast furnace - air
+- PCDD_F - combustion - air
+- TSP - non combustion - Gold ores and concentrates - air
+- TSP - non combustion - Nickel, unwrought - air
+- TSP - non combustion - Refined copper; unwrought, not alloyed - air
+- Employment: Vulnerable employment
+- CH4 - combustion - air
+- PM10 - non combustion - Mining of sub-bituminous coal - air
+- PM10 - non combustion - Nickel, unwrought - air
+- As - non combustion - Steel production: basic oxygen furnace - air
+- B(k)F - non combustion - Production of gascoke - air
+- Cd - non combustion - Zinc, unwrought, not alloyed - air
+- Ni - non combustion - Steel production: basic oxygen furnace - air
+- PM10 - non combustion - Agglomeration plant - pellets - air
+- NOx - non combustion - Production of gascoke - air
+- Se - non combustion - Agglomeration plant - pellets - air
+- TSP - non combustion - Silver ores and concentrates - air
+- Domestic Extraction Used - Primary Crops - Chicory Roots
+- Domestic Extraction Used - Primary Crops - Kolanuts
+- Domestic Extraction Used - Primary Crops - Lemons and Limes
+- Domestic Extraction Used - Primary Crops - Lettuce
+- Domestic Extraction Used - Primary Crops - Onions, dry
+- Domestic Extraction Used - Primary Crops - Pears
+- Unused Domestic Extraction - Primary Crops - Pineapples
+- Unused Domestic Extraction - Primary Crops - Almonds
+- Unused Domestic Extraction - Primary Crops - Cashew nuts, with shell
+- Unused Domestic Extraction - Primary Crops - Mustard Seed
+- Unused Domestic Extraction - Primary Crops - Jute and Jute-like Fibres
+- NMVOC - non combustion - Oil refinery - air
+- N2O - agriculture - air
+- SOx - waste - air
+- Domestic Extraction Used - Crop residues - Straw
+- Domestic Extraction Used - Fishery - Other (e.g. Aquatic mammals)
+- Domestic Extraction Used - Forestry - Non-coniferous wood - Industrial roundwood
+- Domestic Extraction Used - Metal Ores - Copper ores
+- Domestic Extraction Used - Non-Metallic Minerals - Salt
+- Domestic Extraction Used - Primary Crops - Arecanuts
+- Domestic Extraction Used - Primary Crops - Beans, dry
+- Domestic Extraction Used - Primary Crops - Roots and Tubers, nes
+- Domestic Extraction Used - Primary Crops - Sesame Seed
+- Domestic Extraction Used - Primary Crops - Sugar Cane
+- Domestic Extraction Used - Primary Crops - Walnuts
+- Unused Domestic Extraction - Primary Crops - Chillies and peppers, green
+- Unused Domestic Extraction - Fodder crops - Leguminous nec for forage and Silage
+- Unused Domestic Extraction - Metal Ores - Other non-ferrous metal ores
+- Water Consumption Blue - Agriculture - fibres
+- Water Consumption Blue - Agriculture - fodder crops
+- Water Consumption Blue - Manufacturing - Products of meat cattle
+- Water Consumption Blue - Manufacturing - Processed rice
+- Water Consumption Blue - Manufacturing - Cement, lime and plaster
+- Water Consumption Blue - Manufacturing - Secondary copper for treatment, Re-processing of secondary copper into new copper
+- Water Withdrawal Blue - Manufacturing - Plastics, basic
+- Water Withdrawal Blue - Manufacturing - Secondary plastic for treatment, Re-processing of secondary plastic into new plastic
+- Water Withdrawal Blue - Manufacturing - Chemicals nec
+- Water Withdrawal Blue - Manufacturing - Secondary lead for treatment, Re-processing of secondary lead into new lead
+- Water Withdrawal Blue - Manufacturing - Electrical machinery and apparatus n.e.c. (31)
+- Water Withdrawal Blue - Electricity - once-through - Electricity by coal
+- Compensation of employees; wages, salaries, & employers' social contributions: Medium-skilled
+- Benzo(k)fluoranthene - combustion - air
+- Water Consumption Blue - Manufacturing - Fish products
+- Se - non combustion - Steel production: basic oxygen furnace - air
+- TSP - non combustion - Primary aluminium production - air
+- TSP - non combustion - Semi-chemical wood pulp, pulp of fibers other than wood - air
+- PM10 - non combustion - Mining of coking coal - air
+- PM10 - non combustion - Nickel ores and concentrates - air
+- PM10 - non combustion - Pig iron production, blast furnace - air
+- CH4 - non combustion - Mining of coking coal - air
+- CO - non combustion - Agglomeration plant - sinter - air
+- CO - non combustion - Carbon black production - air
+- CO - non combustion - Primary aluminium production - air
+- Cr - non combustion - Steel production: open hearth furnace - air
+- PM10 - non combustion - Fertilizer production (N-fertilizer) - air
+- TSP - non combustion - Zinc ores and concentrates - air
+- Domestic Extraction Used - Primary Crops - Buckwheat
+- Domestic Extraction Used - Primary Crops - Cinnamon
+- Domestic Extraction Used - Primary Crops - Cranberries
+- Domestic Extraction Used - Primary Crops - Ginger
+- Domestic Extraction Used - Primary Crops - Hemp Fibre and Tow
+- Domestic Extraction Used - Primary Crops - Kiwi Fruit
+- Domestic Extraction Used - Primary Crops - Mangoes, mangosteens, guavas
+- Domestic Extraction Used - Primary Crops - Mixed Grain
+- Domestic Extraction Used - Primary Crops - Peas, dry
+- Domestic Extraction Used - Primary Crops - Plantains
+- Domestic Extraction Used - Primary Crops - Pumpkins, Squash, Gourds
+- Unused Domestic Extraction - Primary Crops - Apricots
+- Unused Domestic Extraction - Primary Crops - Plums
+- Unused Domestic Extraction - Primary Crops - Okra
+- Unused Domestic Extraction - Primary Crops - Papayas
+- Unused Domestic Extraction - Primary Crops - Leguminous vegetables, nes
+- Unused Domestic Extraction - Primary Crops - Sugar Cane
+- Unused Domestic Extraction - Primary Crops - Chicory Roots
+- Indeno - non combustion - Primary aluminium production - air
+- NH3 - non combustion - N- fertilizer production - air
+- NMVOC - non combustion - Beef and veal - air
+- NMVOC - non combustion - Decorative paint applicatoin - air
+- NMVOC - non combustion - Diesel distribution - transport and depots (used in mobile sources) - air
+- NMVOC - non combustion - Gasoline distribution - transport and depots (used in stationary sources) - air
+- NMVOC - non combustion - Manufacture of automobiles - air
+- SOx - non combustion - Cement production - air
+- P - waste - water
+- Domestic Extraction Used - Fodder crops - Forage Products nec
+- Domestic Extraction Used - Fodder crops - Sorghum for Forage and Silage
+- Domestic Extraction Used - Fodder crops - Turnips for Fodder
+- Domestic Extraction Used - Metal Ores - Gold ores
+- Domestic Extraction Used - Primary Crops - Artichokes
+- Domestic Extraction Used - Primary Crops - Blueberries
+- Domestic Extraction Used - Primary Crops - Spinach
+- Domestic Extraction Used - Primary Crops - Sugar Beets
+- Domestic Extraction Used - Primary Crops - Tung Nuts
+- Domestic Extraction Used - Primary Crops - Vetches
+- Domestic Extraction Used - Primary Crops - Yams
+- Unused Domestic Extraction - Primary Crops - Sorghum
+- Unused Domestic Extraction - Primary Crops - Vegetables Fresh nec
+- Unused Domestic Extraction - Fodder crops - Rye Grass, Forage and Silage
+- Unused Domestic Extraction - Fossil Fuels - Natural gas
+- Unused Domestic Extraction - Fossil Fuels - Other bituminous coal
+- Water Consumption Green - Agriculture - other cereals
+- Water Consumption Green - Agriculture - fibres
+- Water Consumption Green - Agriculture - other crops
+- Water Consumption Blue - Agriculture - other cereals
+- Water Consumption Blue - Manufacturing - Food products nec
+- Water Consumption Blue - Manufacturing - N-fertiliser
+- Water Consumption Blue - Manufacturing - Chemicals nec
+- Water Consumption Blue - Manufacturing - Secondary steel for treatment, Re-processing of secondary steel into new steel
+- Water Withdrawal Blue - Manufacturing - Leather and leather products (19)
+- Water Withdrawal Blue - Manufacturing - Rubber and plastic products (25)
+- Zn - non combustion - Pig iron production, blast furnace - air
+- Energy Carrier Net NTRA
+- NMVOC - non combustion - Polyvinylchloride produceduction by suspension process - air
+- NMVOC - non combustion - Synthetic rubber - air
+- PM2.5 - non combustion - Chromium ores and concentrates - air
+- CO2 - agriculture - peat decay - air
+- Taxes less subsidies on products purchased: Total
+- Employment hours: Low-skilled male
+- Hg - combustion - air
+- Water Withdrawal Blue - Manufacturing - Fish products
+- TSP - non combustion - Platinum ores and concentrates - air
+- PM10 - non combustion - Primary aluminium production - air
+- PM10 - non combustion - Production of gascoke - air
+- CH4 - non combustion - Mining of antracite - air
+- CO - non combustion - Chemical wood pulp, dissolving grades - air
+- CO - non combustion - Chemical wood pulp, sulphite, other than dissolving grades - air
+- Cr - non combustion - Steel production: electric arc furnace - air
+- Ni - non combustion - Agglomeration plant - sinter - air
+- Ni - non combustion - Production of coke oven coke - air
+- Ni - non combustion - Steel production: electric arc furnace - air
+- PAH - non combustion - Pig iron production, blast furnace - air
+- PAH - non combustion - Steel production: basic oxygen furnace - air
+- Domestic Extraction Used - Primary Crops - Cherries
+- Domestic Extraction Used - Primary Crops - Cloves
+- Domestic Extraction Used - Primary Crops - Garlic
+- Domestic Extraction Used - Primary Crops - Lentils
+- Domestic Extraction Used - Primary Crops - Mate
+- Unused Domestic Extraction - Primary Crops - Persimmons
+- Unused Domestic Extraction - Primary Crops - Pistachios
+- Unused Domestic Extraction - Primary Crops - Taro
+- Unused Domestic Extraction - Primary Crops - Bananas
+- Unused Domestic Extraction - Primary Crops - Brazil nuts, with shell
+- Unused Domestic Extraction - Primary Crops - Cassava leaves
+- Unused Domestic Extraction - Primary Crops - Tallowtree Seeds
+- NMVOC - non combustion - Diesel distribution - transport and depots (used in stationary sources) - air
+- NMVOC - non combustion - Fish, dried, salted or in brine; smoked fish; edible fish meal - air
+- NMVOC - non combustion - Other industrial use of solvents - air
+- Pb - non combustion - Agglomeration plant - sinter - air
+- Zn - non combustion - Refined lead, unwrought - air
+- Zn - non combustion - Steel production: open hearth furnace - air
+- SF6 - air
+- Domestic Extraction Used - Fodder crops - Beets for Fodder
+- Domestic Extraction Used - Fodder crops - Vegetables and Roots, Fodder
+- Domestic Extraction Used - Non-Metallic Minerals - Gravel and sand
+- Domestic Extraction Used - Primary Crops - Abaca
+- Domestic Extraction Used - Primary Crops - Berries nec
+- Domestic Extraction Used - Primary Crops - Safflower Seed
+- Domestic Extraction Used - Primary Crops - Soybeans
+- Domestic Extraction Used - Primary Crops - Tea
+- Domestic Extraction Used - Primary Crops - Triticale
+- Unused Domestic Extraction - Primary Crops - Canary Seed
+- Unused Domestic Extraction - Primary Crops - Lettuce
+- Unused Domestic Extraction - Primary Crops - Mushrooms
+- Unused Domestic Extraction - Primary Crops - Tomatoes
+- Unused Domestic Extraction - Fodder crops - Carrots for Fodder
+- Unused Domestic Extraction - Fodder crops - Sorghum for Forage and Silage
+- Unused Domestic Extraction - Forestry - Coniferous wood - Industrial roundwood
+- Unused Domestic Extraction - Forestry - Non-coniferous wood - Industrial roundwood
+- Unused Domestic Extraction - Forestry - Non-coniferous wood - Wood fuel
+- Unused Domestic Extraction - Metal Ores - Gold ores
+- Water Consumption Green - Agriculture - wheat
+- Water Consumption Green - Agriculture - sugar crops
+- Water Consumption Green - Agriculture - oil crops
+- Water Consumption Blue - Agriculture - rice
+- Water Consumption Blue - Livestock - dairy cattle
+- Water Consumption Blue - Livestock - camels
+- Water Consumption Blue - Manufacturing - Sugar
+- Water Consumption Blue - Manufacturing - Pulp
+- Water Consumption Blue - Manufacturing - Secondary plastic for treatment, Re-processing of secondary plastic into new plastic
+- Water Consumption Blue - Electricity - tower - Electricity by coal
+- Water Withdrawal Blue - Manufacturing - products of Vegetable oils and fats
+- Water Withdrawal Blue - Manufacturing - Other non-ferrous metal products
+- Energy Carrier Net TOTH
+- NMVOC - non combustion - Rotogravure in publication - air
+- NMVOC - non combustion - Screen printing - air
+- Cu - non combustion - Steel production: open hearth furnace - air
+- Employment: Low-skilled male
+- Employment: High-skilled female
+- Employment hours: Medium-skilled male
+- TSP - non combustion - Agglomeration plant - sinter - air
+- TSP - non combustion - Chemical wood pulp, sulphite, other than dissolving grades - air
+- TSP - non combustion - Molybdenum ores and concentrates - air
+- TSP - non combustion - N- fertilizer production - air
+- NOx - non combustion - Nickel, unwrought - air
+- PM10 - non combustion - N- fertilizer production - air
+- B(a)P - non combustion - Production of gascoke - air
+- B(k)F - non combustion - Primary aluminium production - air
+- Cd - non combustion - Steel production: electric arc furnace - air
+- Ni - non combustion - Agglomeration plant - pellets - air
+- Ni - non combustion - Steel production: open hearth furnace - air
+- SOx - non combustion - Chemical wood pulp, sulphite, other than dissolving grades - air
+- SOx - non combustion - Glass production - air
+- PM10 - non combustion - Chemical wood pulp, sulphite, other than dissolving grades - air
+- PM10 - non combustion - Glass production - air
+- PM10 - non combustion - Mining of antracite - air
+- NOx - non combustion - Refined lead, unwrought - air
+- NOx - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- SOx - non combustion - Production of gascoke - air
+- Domestic Extraction Used - Primary Crops - Fruit, tropical fresh nes
+- Domestic Extraction Used - Primary Crops - Hazelnuts
+- Domestic Extraction Used - Primary Crops - Onions
+- Domestic Extraction Used - Primary Crops - Papayas
+- Domestic Extraction Used - Primary Crops - Peaches and Nectarines
+- Domestic Extraction Used - Primary Crops - Peas, Green
+- Domestic Extraction Used - Primary Crops - Pistachios
+- Domestic Extraction Used - Primary Crops - Quinoa
+- Unused Domestic Extraction - Primary Crops - Blueberries
+- Unused Domestic Extraction - Primary Crops - Quinces
+- Unused Domestic Extraction - Primary Crops - Berries nec
+- Unused Domestic Extraction - Primary Crops - Yautia
+- Unused Domestic Extraction - Primary Crops - Coconuts
+- Unused Domestic Extraction - Primary Crops - Onions
+- Unused Domestic Extraction - Primary Crops - Mangoes, mangosteens, guavas
+- Unused Domestic Extraction - Primary Crops - Oil Palm Fruit
+- Unused Domestic Extraction - Primary Crops - Sisal
+- Unused Domestic Extraction - Primary Crops - Peppermint
+- Hg - non combustion - Pig iron production, blast furnace - air
+- Hg - non combustion - Steel production: basic oxygen furnace - air
+- NMVOC - non combustion - Extraction/production of (natural) gas - air
+- NMVOC - non combustion - Fat, edible and non-edible oil extraction - air
+- NMVOC - non combustion - Industrial application of adhesives (use of traditional solvent based adhesives) - air
+- PM2.5 - non combustion - Steel production: electric arc furnace - air
+- Pb - non combustion - Agglomeration plant - pellets - air
+- Pb - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- Cropland - Fodder crops-Poultry
+- Domestic Extraction Used - Crop residues - Feed
+- Domestic Extraction Used - Fodder crops - Maize for Forage and Silage
+- Domestic Extraction Used - Metal Ores - Tin ores
+- Domestic Extraction Used - Primary Crops - Kapokseed in Shell
+- Domestic Extraction Used - Primary Crops - Avocados
+- Domestic Extraction Used - Primary Crops - Yautia
+- Unused Domestic Extraction - Fodder crops - Maize for Forage and Silage
+- Unused Domestic Extraction - Fodder crops - Vegetables and Roots, Fodder
+- Unused Domestic Extraction - Fossil Fuels - Sub-bituminous coal
+- Unused Domestic Extraction - Metal Ores - Silver ores
+- Unused Domestic Extraction - Metal Ores - Uranium and thorium ores
+- Unused Domestic Extraction - Non-Metallic Minerals - Building stones
+- Unused Domestic Extraction - Non-Metallic Minerals - Slate
+- Water Consumption Green - Agriculture - pulses
+- Water Consumption Green - Agriculture - fruits
+- Water Consumption Blue - Manufacturing - Secondary glass for treatment, Re-processing of secondary glass into new glass
+- Water Consumption Blue - Manufacturing - Ash for treatment, Re-processing of ash into clinker
+- Water Consumption Blue - Manufacturing - Secondary lead for treatment, Re-processing of secondary lead into new lead
+- Water Consumption Blue - Electricity - once-through - Electricity by petroleum and other oil derivatives
+- Water Withdrawal Blue - Manufacturing - Products of meat poultry
+- Water Withdrawal Blue - Manufacturing - Cement, lime and plaster
+- Water Withdrawal Blue - Manufacturing - Other non-metallic mineral products
+- Water Withdrawal Blue - Manufacturing - Lead, zinc and tin and products thereof
+- Zn - non combustion - Nickel, unwrought - air
+- PM2.5 - non combustion - Lead ores and concentrates - air
+- PM2.5 - non combustion - Lime production - air
+- PM2.5 - non combustion - Molybdenum ores and concentrates - air
+- Compensation of employees; wages, salaries, & employers' social contributions: Low-skilled
+- TSP - non combustion - Production of coke oven coke - air
+- Benzo(a)pyrene - combustion - air
+- NOx - non combustion - Oil refinery - air
+- PM10 - non combustion - Mining of lignite (brown coal) - air
+- PM10 - non combustion - Semi-chemical wood pulp, pulp of fibers other than wood - air
+- PCB - non combustion - Agglomeration plant - pellets - air
+- SOx - non combustion - Oil refinery - air
+- PM10 - non combustion - Briquettes production - air
+- NOx - non combustion - Pig iron production, blast furnace - air
+- Domestic Extraction Used - Primary Crops - Chestnuts
+- Domestic Extraction Used - Primary Crops - Chick peas
+- Domestic Extraction Used - Primary Crops - Coconuts
+- Domestic Extraction Used - Primary Crops - Coir
+- Domestic Extraction Used - Primary Crops - Cucumbers and Gherkins
+- Domestic Extraction Used - Primary Crops - Fruit Fresh Nes
+- Domestic Extraction Used - Primary Crops - Grapes
+- Domestic Extraction Used - Primary Crops - Linseed
+- Domestic Extraction Used - Primary Crops - Other melons
+- Unused Domestic Extraction - Primary Crops - Oranges
+- Unused Domestic Extraction - Primary Crops - Peaches and Nectarines
+- Unused Domestic Extraction - Primary Crops - Chestnuts
+- Unused Domestic Extraction - Primary Crops - Chick peas
+- Unused Domestic Extraction - Primary Crops - Oilseeds nec
+- Hg - non combustion - Production of coke oven coke - air
+- Hg - non combustion - Steel production: electric arc furnace - air
+- PM2.5 - non combustion - Pig iron production, blast furnace - air
+- PM2.5 - non combustion - Primary aluminium production - air
+- PM2.5 - non combustion - Semi-chemical wood pulp, pulp of fibers other than wood - air
+- PM2.5 - non combustion - Silver ores and concentrates - air
+- SOx - non combustion - Agglomeration plant - sinter - air
+- NH3 - agriculture - air
+- NH3 - waste - air
+- NOX - waste - air
+- Cropland - Vegetables, fruit, nuts
+- Energy Inputs from Nature: Total
+- Energy Carrier Use: Total
+- Domestic Extraction Used - Fishery - Aquatic plants
+- Domestic Extraction Used - Fodder crops - Rye Grass, Forage and Silage
+- Domestic Extraction Used - Forestry - Coniferous wood - Wood fuel
+- Domestic Extraction Used - Primary Crops - Honey
+- Domestic Extraction Used - Primary Crops - Apples
+- Domestic Extraction Used - Primary Crops - Sour Cherries
+- Domestic Extraction Used - Primary Crops - Strawberries
+- Domestic Extraction Used - Primary Crops - Sweet Potatoes
+- Unused Domestic Extraction - Primary Crops - Maize
+- Unused Domestic Extraction - Primary Crops - Vetches
+- Unused Domestic Extraction - Primary Crops - Garlic
+- Unused Domestic Extraction - Fodder crops - Cabbage for Fodder
+- Water Consumption Green - Agriculture - rice
+- Water Consumption Blue - Livestock - buffaloes
+- Water Consumption Blue - Manufacturing - Textiles (17)
+- Water Consumption Blue - Manufacturing - Leather and leather products (19)
+- Water Consumption Blue - Manufacturing - Machinery and equipment n.e.c. (29)
+- Water Withdrawal Blue - Manufacturing - Sugar
+- Water Withdrawal Blue - Manufacturing - Beverages
+- Water Withdrawal Blue - Manufacturing - P- and other fertiliser
+- Water Withdrawal Blue - Manufacturing - Aluminium and aluminium products
+- Water Withdrawal Blue - Manufacturing - Secondary aluminium for treatment, Re-processing of secondary aluminium into new aluminium
+- Water Withdrawal Blue - Manufacturing - Machinery and equipment n.e.c. (29)
+- Water Withdrawal Blue - Manufacturing - Office machinery and computers (30)
+- Water Withdrawal Blue - Manufacturing - Motor vehicles, trailers and semi-trailers (34)
+- Energy Carrier Net NENE
+- NMVOC - non combustion - Printing, offset - air
+- NOx - non combustion - Agglomeration plant - sinter - air
+- PM2.5 - non combustion - Briquettes production - air
+- PM2.5 - non combustion - Cast iron production (grey iron foundries) - air
+- PM2.5 - non combustion - Mining of coking coal - air
+- Cu - non combustion - Agglomeration plant - sinter - air
+- Hg - non combustion - Agglomeration plant - pellets - air
+- Employment: Medium-skilled male
+- Employment: Medium-skilled female
+- Employment hours: Low-skilled female
+- Water Withdrawal Blue - Electricity - once-through - Electricity by Geothermal
+- TSP - non combustion - Cast iron production (grey iron foundries) - air
+- TSP - non combustion - Lime production - air
+- TSP - non combustion - Mining of coking coal - air
+- TSP - non combustion - Refined lead, unwrought - air
+- CO2 - combustion - air
+- SOx - combustion - air
+- NOx - non combustion - Chemical wood pulp, sulphite, other than dissolving grades - air
+- CO - non combustion - Production of coke oven coke - air
+- CO2 - non combustion - Lime production - air
+- Ni - non combustion - Production of gascoke - air
+- PCDD/F - non combustion - Agglomeration plant - pellets - air
+- PCDD/F - non combustion - Secondary aluminium production - air
+- PM10 - non combustion - Mining of bituminous coal - air
+- SOx - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- Domestic Extraction Used - Primary Crops - Chillies and peppers, dry
+- Domestic Extraction Used - Primary Crops - Cotton Lint
+- Domestic Extraction Used - Primary Crops - Cottonseed
+- Domestic Extraction Used - Primary Crops - Hempseed
+- Domestic Extraction Used - Primary Crops - Hops
+- Domestic Extraction Used - Primary Crops - Lupins
+- Domestic Extraction Used - Primary Crops - Mushrooms
+- Unused Domestic Extraction - Primary Crops - Sour Cherries
+- Unused Domestic Extraction - Primary Crops - Cassava
+- Unused Domestic Extraction - Primary Crops - Watermelons
+- Unused Domestic Extraction - Primary Crops - Cranberries
+- Unused Domestic Extraction - Primary Crops - Groundnuts in Shell
+- Unused Domestic Extraction - Primary Crops - Melonseed
+- Unused Domestic Extraction - Primary Crops - Safflower Seed
+- Unused Domestic Extraction - Primary Crops - Karite Nuts
+- Unused Domestic Extraction - Primary Crops - Cottonseed
+- Hg - non combustion - Nickel, unwrought - air
+- NMVOC - non combustion - Extraction, proc. and distribution of liquid fuels - air
+- NMVOC - non combustion - Inorganic chemical industry, fertilizers and other - air
+- PM2.5 - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- Pb - non combustion - Zinc, unwrought, not alloyed - air
+- P - agriculture - water
+- Cropland - Fodder crops-Pigs
+- Permanent pastures - Grazing-Cattle
+- Domestic Extraction Used - Fossil Fuel: Total
+- Domestic Extraction Used - Primary Crops - Agave Fibres nes
+- Domestic Extraction Used - Primary Crops - Sugar Crops nes
+- Domestic Extraction Used - Primary Crops - Tea nes
+- Domestic Extraction Used - Primary Crops - Wheat
+- Unused Domestic Extraction - Primary Crops - Rye
+- Unused Domestic Extraction - Fodder crops - Forage Products nec
+- Unused Domestic Extraction - Fodder crops - Grasses nec for Forage and Silage
+- Unused Domestic Extraction - Fodder crops - Green Oilseeds for Fodder
+- Unused Domestic Extraction - Forestry - Coniferous wood - Wood fuel
+- Unused Domestic Extraction - Fossil Fuels - Coking coal
+- Unused Domestic Extraction - Fossil Fuels - Lignite/brown coal
+- Water Consumption Blue - Agriculture - pulses
+- Water Consumption Blue - Manufacturing - Precious metals
+- Water Consumption Blue - Manufacturing - Electrical machinery and apparatus n.e.c. (31)
+- Water Withdrawal Blue - Manufacturing - Paper and paper products
+- Energy Carrier Net TMAR
+- NMVOC - non combustion - Pharmaceutical industry - air
+- NMVOC - non combustion - Polystyrene processing - air
+- NOx - non combustion - Bricks production - air
+- PM2.5 - non combustion - Mining of antracite - air
+- PM2.5 - combustion - air
+- TSP - non combustion - Agglomeration plant - pellets - air
+- TSP - non combustion - Aluminium ores and concentrates (Bauxite) - air
+- TSP - non combustion - Production of gascoke - air
+- N2O - combustion - air
+- PM10 - non combustion - Oil refinery - air
+- As - non combustion - Agglomeration plant - pellets - air
+- CO - non combustion - Chemical wood pulp, soda and sulphate, other than dissolving grades - air
+- CO - non combustion - Glass production - air
+- CO - non combustion - Oil refinery - air
+- Cr - non combustion - Steel production: basic oxygen furnace - air
+- Cu - non combustion - Agglomeration plant - pellets - air
+- Ni - non combustion - Glass production - air
+- PAH - non combustion - Production of gascoke - air
+- SOx - non combustion - Nickel, unwrought - air
+- NOx - non combustion - Semi-chemical wood pulp, pulp of fibers other than wood - air
+- TSP - non combustion - Tin ores and concentrates - air
+- PM10 - non combustion - Secondary aluminium production - air
+- Domestic Extraction Used - Primary Crops - Cassava
+- Domestic Extraction Used - Primary Crops - Flax Fibre and Tow
+- Domestic Extraction Used - Primary Crops - Fonio
+- Domestic Extraction Used - Primary Crops - Leeks and other Alliac. Veg.
+- Unused Domestic Extraction - Primary Crops - Currants
+- Unused Domestic Extraction - Primary Crops - Dates
+- Unused Domestic Extraction - Primary Crops - Tang. Mand Clement. Satsma
+- Unused Domestic Extraction - Primary Crops - Pyrethrum, Dried Flowers
+- Indeno - non combustion - Production of gascoke - air
+- NMVOC - non combustion - Industrial application of adhesives (use of high performance solvent based adhesives) - air
+- PM2.5 - non combustion - Production of gascoke - air
+- SOx - non combustion - Chemical wood pulp, soda and sulphate, other than dissolving grades - air
+- Cropland - Fodder crops-Meat animals nec
+- Cropland - Wheat
+- Domestic Extraction Used - Forestry - Non-coniferous wood - Wood fuel
+- Domestic Extraction Used - Metal Ores - Other non-ferrous metal ores
+- Domestic Extraction Used - Metal Ores - Uranium and thorium ores
+- Domestic Extraction Used - Non-Metallic Minerals - Chemical and fertilizer minerals
+- Domestic Extraction Used - Non-Metallic Minerals - Other minerals
+- Domestic Extraction Used - Primary Crops - Almonds
+- Domestic Extraction Used - Primary Crops - Spices nec
+- Domestic Extraction Used - Primary Crops - Stone Fruit nec,
+- Unused Domestic Extraction - Primary Crops - Cereals nec
+- Unused Domestic Extraction - Primary Crops - Pulses nec
+- Unused Domestic Extraction - Primary Crops - Pumpkins, Squash, Gourds
+- Unused Domestic Extraction - Fodder crops - Turnips for Fodder
+- Unused Domestic Extraction - Metal Ores - Iron ores
+- Unused Domestic Extraction - Non-Metallic Minerals - Clays and kaolin
+- Water Consumption Blue - Agriculture - nuts
+- Water Consumption Blue - Agriculture - vegetables
+- Water Consumption Blue - Manufacturing - Radio, television and communication equipment and apparatus (32)
+- Water Consumption Blue - Manufacturing - Furniture; other manufactured goods n.e.c. (36)
+- Water Consumption Blue - Electricity - tower - Electricity by nuclear
+- Water Withdrawal Blue - Manufacturing - Glass and glass products
+- Water Withdrawal Blue - Manufacturing - Bricks, tiles and construction products, in baked clay
+- Water Withdrawal Blue - Manufacturing - Copper products
+- Water Withdrawal Blue - Electricity - tower - Electricity by nuclear
+- Water Withdrawal Blue - Electricity - tower - Electricity by solar thermal
+- Energy Carrier Net LOSS
+- NMVOC - non combustion - Vehicle refinishing - air
+- NOx - non combustion - Agglomeration plant - pellets - air
+- HCB - non combustion - Agglomeration plant - sinter - air
+- TSP - non combustion - Lead ores and concentrates - air
+- Employment hours: High-skilled male
+- Employment hours: High-skilled female
+- Employment hours: Vulnerable employment
+- NOx - non combustion - Glass production - air
+- PM10 - non combustion - Steel production: open hearth furnace - air
+- PM10 - non combustion - Zinc, unwrought, not alloyed - air
+- As - non combustion - Glass production - air
+- As - non combustion - Steel production: open hearth furnace - air
+- CO - non combustion - Production of gascoke - air
+- Cd - non combustion - Production of coke oven coke - air
+- Cd - non combustion - Refined lead, unwrought - air
+- Cr - non combustion - Agglomeration plant - pellets - air
+- Cr - non combustion - Agglomeration plant - sinter - air
+- PM10 - non combustion - Chemical wood pulp, dissolving grades - air
+- PM10 - non combustion - Lead ores and concentrates - air
+- SOx - non combustion - Refined lead, unwrought - air
+- SOx - non combustion - Sulphuric acid production - air
+- TSP - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- TSP - non combustion - Zinc, unwrought, not alloyed - air
+- Domestic Extraction Used - Primary Crops - Canary Seed
+- Domestic Extraction Used - Primary Crops - Carobs
+- Domestic Extraction Used - Primary Crops - Cauliflower
+- Domestic Extraction Used - Primary Crops - Cereals nec
+- Domestic Extraction Used - Primary Crops - Chillies and peppers, green
+- Domestic Extraction Used - Primary Crops - Gooseberries
+- Domestic Extraction Used - Primary Crops - Millet
+- Domestic Extraction Used - Primary Crops - Mustard Seed
+- Domestic Extraction Used - Primary Crops - Olives
+- Domestic Extraction Used - Primary Crops - Plums
+- Domestic Extraction Used - Primary Crops - Quinces
+- Unused Domestic Extraction - Primary Crops - Walnuts
+- Unused Domestic Extraction - Primary Crops - Bambara beans
+- Unused Domestic Extraction - Primary Crops - Cow peas, dry
+- Unused Domestic Extraction - Primary Crops - Fruit Fresh Nes
+- Unused Domestic Extraction - Primary Crops - Plantains
+- Unused Domestic Extraction - Primary Crops - Kolanuts
+- Unused Domestic Extraction - Primary Crops - Sunflower Seed
+- Unused Domestic Extraction - Primary Crops - Cotton Lint
+- Unused Domestic Extraction - Fishery - Inland waters fish catch
+- NMVOC - non combustion - Dry cleaning - air
+- NMVOC - non combustion - Mutton and lamb - air
+- Pb - non combustion - Refined copper; unwrought, not alloyed - air
+- Pb - non combustion - Steel production: electric arc furnace - air
+- SOx - non combustion - Bricks production - air
+- Zn - non combustion - Steel production: electric arc furnace - air
+- CO - waste - air
+- Emissions nec - waste - undef
+- Cropland - Fodder crops-Raw milk
+- Domestic Extraction Used - Fodder crops - Cabbage for Fodder
+- Domestic Extraction Used - Primary Crops - Bananas
+- Domestic Extraction Used - Primary Crops - Tallowtree Seeds
+- Domestic Extraction Used - Primary Crops - Tobacco Leaves
+- Unused Domestic Extraction - Primary Crops - Potatoes
+- Unused Domestic Extraction - Fodder crops - Swedes for Fodder
+- Unused Domestic Extraction - Metal Ores - Nickel ores
+- Unused Domestic Extraction - Non-Metallic Minerals - Other minerals
+- Water Consumption Blue - Livestock - chicken
+- Water Consumption Blue - Livestock - ducks
+- Water Consumption Blue - Manufacturing - Glass and glass products
+- Water Consumption Blue - Manufacturing - Bricks, tiles and construction products, in baked clay
+- Water Withdrawal Blue - Manufacturing - Tobacco products (16)
+- Water Withdrawal Blue - Manufacturing - Basic iron and steel and of ferro-alloys and first products thereof
+- Water Withdrawal Blue - Manufacturing - Secondary steel for treatment, Re-processing of secondary steel into new steel
+- Water Withdrawal Blue - Electricity - tower - Electricity by petroleum and other oil derivatives
+- NMVOC - non combustion - Pork - air
+- NMVOC - non combustion - Products incorporating solvents - air
+- PM2.5 - non combustion - Bricks production - air
+- PM2.5 - non combustion - Cement production - air
+- PM2.5 - non combustion - Gold ores and concentrates - air
+- PM2.5 - non combustion - Nickel ores and concentrates - air
+- HCB - combustion - air
+- As - combustion - air
+- Water Withdrawal Blue - Electricity - once-through - Electricity by biomass and waste
+- NOx - combustion - air
+- NH3 - combustion - air
+- NOx - non combustion - Lime production - air
+- PM10 - non combustion - Zinc ores and concentrates - air
+- Zn - combustion - air
+- As - non combustion - Production of coke oven coke - air
+- PCDD/F - non combustion - Agglomeration plant - sinter - air
+- PM10 - non combustion - Aluminium ores and concentrates (Bauxite) - air
+- PM10 - non combustion - Gold ores and concentrates - air
+- PM10 - non combustion - Lime production - air
+- SOx - non combustion - Refined copper; unwrought, not alloyed - air
+- TSP - non combustion - Secondary aluminium production - air
+- TSP - non combustion - Steel production: electric arc furnace - air
+- Domestic Extraction Used - Primary Crops - Eggplants
+- Domestic Extraction Used - Primary Crops - Melonseed
+- Domestic Extraction Used - Primary Crops - Nutmeg, mace and cardamoms
+- Domestic Extraction Used - Primary Crops - Other Bastfibres
+- Domestic Extraction Used - Primary Crops - Peppermint
+- Domestic Extraction Used - Primary Crops - Pineapples
+- Unused Domestic Extraction - Primary Crops - Cherries
+- Unused Domestic Extraction - Primary Crops - Pears
+- Unused Domestic Extraction - Primary Crops - Citrus Fruit nec
+- Unused Domestic Extraction - Primary Crops - Beans, dry
+- Unused Domestic Extraction - Primary Crops - Arecanuts
+- Unused Domestic Extraction - Primary Crops - Sesame Seed
+- Unused Domestic Extraction - Primary Crops - Mate
+- HCB - non combustion - Secondary aluminium production - air
+- Hg - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- NMVOC - non combustion - Industrial paint application, general industry - air
+- N - waste - water
+- Permanent pastures - Grazing-Meat animals nec
+- Domestic Extraction Used - Forestry - Coniferous wood - Industrial roundwood
+- Domestic Extraction Used - Forestry - Natural Gums
+- Domestic Extraction Used - Grazing
+- Domestic Extraction Used - Metal Ores - Zinc ores
+- Domestic Extraction Used - Primary Crops - Taro
+- Unused Domestic Extraction - Primary Crops - Buckwheat
+- Unused Domestic Extraction - Primary Crops - Triticale
+- Unused Domestic Extraction - Primary Crops - Yams
+- Unused Domestic Extraction - Primary Crops - Lentils
+- Unused Domestic Extraction - Primary Crops - Cauliflower
+- Unused Domestic Extraction - Primary Crops - Eggplants
+- Unused Domestic Extraction - Primary Crops - Peas, Green
+- Unused Domestic Extraction - Fodder crops - Clover for Forage and Silage
+- Unused Domestic Extraction - Metal Ores - Lead ores
+- Water Consumption Blue - Agriculture - sugar crops
+- Water Consumption Blue - Livestock - nondairy cattle
+- Water Consumption Blue - Livestock - horses
+- Water Consumption Blue - Livestock - geese
+- Water Consumption Blue - Manufacturing - Products of meat poultry
+- Water Consumption Blue - Manufacturing - Meat products nec
+- Water Consumption Blue - Manufacturing - Ceramic goods
+- Water Withdrawal Blue - Manufacturing - Processed rice
+- Water Withdrawal Blue - Manufacturing - Furniture; other manufactured goods n.e.c. (36)
+- PM2.5 - non combustion - Agglomeration plant - sinter - air
+- HCB - non combustion - Agglomeration plant - pellets - air
+- Employment: Low-skilled female
+- Water Withdrawal Blue - Electricity - once-through - Electricity by nuclear
+- TSP - non combustion - Mining of bituminous coal - air
+- TSP - non combustion - Oil refinery - air
+- PM10 - non combustion - Unrefined copper; copper anodes for electrolytic refining - air
+- Se - combustion - air
+- As - non combustion - Agglomeration plant - sinter - air
+- CH4 - non combustion - Mining of bituminous coal - air
+- CH4 - non combustion - Oil refinery - air
+- CO - non combustion - Pig iron production, blast furnace - air
+- CO - non combustion - Semi-chemical wood pulp, pulp of fibers other than wood - air
+- Cd - non combustion - Steel production: basic oxygen furnace - air
+- PAH - non combustion - Agglomeration plant - pellets - air
+- PCB - non combustion - Agglomeration plant - sinter - air
+- SOx - non combustion - Zinc, unwrought, not alloyed - air
+- Pb - combustion - air
