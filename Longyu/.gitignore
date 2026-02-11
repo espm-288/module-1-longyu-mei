@@ -1,0 +1,21 @@
+# R-specific files
+.Rhistory
+.RData
+.Rproj.user
+.Rapp.history
+*.Rproj
+
+# Quarto / Website
+.quarto/
+_site/
+_freeze/
+*_files/
+*.html
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code (except copilot-instructions)
+.vscode/*
+!.vscode/copilot-instructions.md

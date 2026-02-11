@@ -5,14 +5,34 @@ author: "ESPM 288"
 format: html
 ---
 
-Explain our analysis and so forth.
+## Introduction
+
+In this module, we will explore high-performance workflows for tabular data. We will use `duckdbfs` to work with datasets that are larger than available RAM by leveraging DuckDB's streaming and remote file access capabilities.
+
+## Case Study: Global Supply Chains
+
+We will be working with [EXIOBASE 3.8.1](https://source.coop/youssef-harby/exiobase-3), a global Multi-Regional Input-Output (MRIO) database. This dataset tracks economic transactions between sectors and regions, along with their environmental impacts (emissions, resource use, etc.).
+
+**Data description:**
+- **Coverage**: 44 countries + 5 rest-of-world regions.
+- **Timeframe**: 1995–2022.
+- **Content**: Economic transactions (Z matrix), final demand (Y matrix), and environmental stressors (F matrix).
+- **Format**: Cloud-optimized Parquet, partitioned by year and matrix type.
+
 ## Setup
 
 ```{r}
+# Install ggplot2 if not already installed
+if (!require("ggplot2", quietly = TRUE)) {
+    install.packages("ggplot2", repos = "https://cloud.r-project.org")
+}
+
 library(duckdbfs)
 library(dplyr)
 library(ggplot2)
+
 ```
+
 ## Exercise 1: connecting to remote data
 
 We can open the entire dataset without downloading it using `open_dataset()`. The data is hosted on Source Cooperative. The `**` pattern allows recursive scanning of the partitioned parquet files.
@@ -64,7 +84,6 @@ exio|>
     distinct(stressor) |>
     collect()
 ```
-
 Identify which regions are the top 5 CO2 emitters:
 ```{r}
 # Get top 5 CO2 emitting regions across all years
@@ -81,39 +100,6 @@ top_co2_regions <- exio |>
 top_co2_regions
 ```
 
-Filter the co2 data down to just the top 5 emitting regions, and plot the trend over time, and export:
-```{r}
-# Extract the top 5 region names
-top5_regions <- top_co2_regions$region
-
-# Get time series data for top 5 emitters
-co2_timeseries <- exio |>
-    filter(matrix == "F_satellite",
-           stressor %like% "%CO2%",
-           region %in% top5_regions) |>
-    group_by(year, region) |>
-    summarise(total_co2 = sum(value, na.rm = TRUE)) |>
-    arrange(year, region) |>
-    collect()
-
-# Create the plot
-plot_regions <- ggplot(co2_timeseries, aes(x = year, y = total_co2, color = region, group = region)) +
-    geom_line(linewidth = 1.2) +
-    geom_point(size = 2) +
-    labs(title = "CO2 Emissions Over Time: Top 5 Emitters",
-         x = "Year",
-         y = "Total CO2 Emissions",
-         color = "Region") +
-    theme_minimal() +
-    theme(legend.position = "bottom",
-          plot.title = element_text(hjust = 0.5, face = "bold"))
-
-# Save the plot
-ggsave("co2_emissions_regions.png", plot = plot_regions, width = 10, height = 6, dpi = 300)
-
-# Display the plot
-plot_regions
-```
 
 Export all unique stressor types from F_matrix to a markdown file:
 ```{r}
@@ -138,13 +124,25 @@ writeLines(
 cat("Exported", nrow(stressors), "stressor types to stressor_types.md\n")
 ```
 
-Just like what we did for CO2 emissions by region, I want to see the ones by sector. Please give me the top 5 sectors and plot them over time as well.
+## Exercise 2: Efficient Filtering
 
-Identify which sectors are the top 5 CO2 emitters:
+The dataset is large. We should filter *before* collecting any data into R.
+
 ```{r}
-# Get top 5 CO2 emitting sectors across all years
-top_co2_sectors <- exio |>
-    filter(matrix == "F_satellite",
+exio |>
+    filter(year == 2022, region == "US") |>
+    head() |> # view the first 6 rows
+    collect()
+```
+
+> **Task**: Construct a query to find the top 5 sectors in the US by CO2 emissions in 2022. Remember to check the column names in `exio` to find the appropriate emissions flow.
+
+```{r}
+# Query CO2 emissions data from F_satellite matrix
+co2_data <- exio |>
+    filter(year == 2022, 
+           region == "US",
+           matrix == "F_satellite",
            stressor %like% "%CO2%") |>
     group_by(sector) |>
     summarise(total_co2 = sum(value, na.rm = TRUE),
@@ -153,40 +151,72 @@ top_co2_sectors <- exio |>
     head(5) |>
     collect()
 
-top_co2_sectors
+co2_data
 ```
 
-Filter the CO2 data down to just the top 5 emitting sectors, and plot the trend over time:
-```{r}
-# Extract the top 5 sector names
-top5_sectors <- top_co2_sectors |>
-    pull(sector)
+## Exercise 3: Comprehensive CO2 Analysis
 
-# Get time series data for top 5 sectors
-co2_timeseries_sectors <- exio |>
-    filter(matrix == "F_satellite",
-           stressor %like% "%CO2%",
-           sector %in% top5_sectors) |>
-    group_by(year, sector) |>
-    summarise(total_co2 = sum(value, na.rm = TRUE)) |>
-    arrange(year, sector) |>
+Now let's read in all CO2 data for further analysis.
+
+```{r}
+# Read all CO2 emissions by region for 2022
+co2_by_region <- exio |>
+    filter(year == 2022,
+           matrix == "F_satellite",
+           stressor %like% "%CO2%") |>
+    group_by(region) |>
+    summarise(total_co2 = sum(value, na.rm = TRUE),
+              unit = first(unit)) |>
+    arrange(desc(total_co2)) |>
     collect()
 
-# Create the plot
-plot_sectors <- ggplot(co2_timeseries_sectors, aes(x = year, y = total_co2, color = sector, group = sector)) +
+# View top 20 CO2 emitters
+head(co2_by_region, 20)
+```
+
+## Exercise 4: Visualizing CO2 Emissions Over Time
+
+```{r}
+# Identify top 5 CO2 emitters (based on 2022 data)
+top5_emitters <- co2_by_region |>
+    head(5) |>
+    pull(region)
+
+top5_emitters
+```
+
+```{r}
+# Get time series for top 5 emitters
+co2_timeseries_top5 <- exio |>
+    filter(matrix == "F_satellite",
+           stressor %like% "%CO2%",
+           region %in% top5_emitters) |>
+    group_by(year, region) |>
+    summarise(total_co2 = sum(value, na.rm = TRUE)) |>
+    arrange(year, region) |>
+    collect()
+
+co2_timeseries_top5
+```
+
+```{r}
+# Visualize CO2 emissions over time for top 5 emitters
+library(ggplot2)
+
+plot_co2 <- ggplot(co2_timeseries_top5, aes(x = year, y = total_co2, color = region, group = region)) +
     geom_line(linewidth = 1.2) +
     geom_point(size = 2) +
-    labs(title = "CO2 Emissions Over Time: Top 5 Sectors",
+    labs(title = "CO2 Emissions Over Time: Top 5 Emitters (1995-2022)",
          x = "Year",
          y = "Total CO2 Emissions",
-         color = "Sector") +
+         color = "Country/Region") +
     theme_minimal() +
     theme(legend.position = "bottom",
           plot.title = element_text(hjust = 0.5, face = "bold"))
 
-# Save the plot
-ggsave("co2_emissions_sectors.png", plot = plot_sectors, width = 10, height = 6, dpi = 300)
-
 # Display the plot
-plot_sectors
+print(plot_co2)
+
+# Save the plot to a file you can open
+ggsave("co2_emissions_top5.png", plot = plot_co2, width = 10, height = 6, dpi = 300)
 ```
