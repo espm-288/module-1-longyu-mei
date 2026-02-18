@@ -5,6 +5,7 @@ author: "Mei Collins"
 format: 
   html:
     embed-resources: true
+  pdf: default
 ---
 
 ## Case Study: Global Supply Chains
