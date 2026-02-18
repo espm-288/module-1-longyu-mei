@@ -109,6 +109,9 @@ emissions_graph <- ggplot(co2_time_series, aes(x = year, y = total_co2, color = 
 # Save the plot to a file
 ggsave("top5emitters_timeseries.png", plot = emissions_graph, width = 10, height = 6)
 
+# Display the plot
+emissions_graph
+
 ```
 
 Other questions we can explore with this data include:
@@ -163,4 +166,7 @@ decreasing_emissions_graph <- ggplot(co2_decreasing_time_series, aes(x = year, y
 
 # Save the plot to a file
 ggsave("top5decreasing_emitters_timeseries.png", plot = decreasing_emissions_graph, width = 10, height = 6)
+
+# Display the plot
+decreasing_emissions_graph
 ```
